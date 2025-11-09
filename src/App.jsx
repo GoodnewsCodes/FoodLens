@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import Button from "./components/Button/Button";
+import heroImage from "./assets/hero.jpg";
 import "./App.css";
 // import Footer from "./components/Footer/Footer";
 
@@ -7,7 +8,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="hero">
+      <section
+        className="hero"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
         <div className="hero-container">
           <h1 className="hero-text">Know more about your food in one Snap📸</h1>
           <Button
