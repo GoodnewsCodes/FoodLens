@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar/Navbar";
 import Button from "./components/Button/Button";
 import "./App.css";
