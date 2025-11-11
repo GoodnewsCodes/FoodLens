@@ -1,4 +1,4 @@
-button {
+.button {
   background-color: white;
   color: var(--hover);
   border: none;
@@ -11,7 +11,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--hover);
   color: white;
   transition: 0.3s ease;

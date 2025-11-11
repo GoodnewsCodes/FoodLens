@@ -8,7 +8,7 @@ function Navbar() {
           <a>FoodLens</a>
         </div>
         <div className="links">
-          <a>Features</a>
+          <a href="#features">Features</a>
           <a>About</a>
           <a>Sponsor</a>
         </div>
