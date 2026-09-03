@@ -1,28 +1,68 @@
+import { useState, useEffect } from "react";
+import logoImage from "../../assets/logo.png";
 import "./Navbar.css";
-function Navbar() {
+
+function Navbar({ onStartScan }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleNavClick = (callback) => {
+    setMenuOpen(false);
+    if (callback) callback();
+  };
+
   return (
-    <>
-      <nav className="navbar">
-        <div className="brand">
-          <img src="logo.png" alt="🔍" height={35} width={35} />
-          <a>FoodLens</a>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <div className="navbar-container">
+        <a href="#" className="brand" onClick={() => setMenuOpen(false)}>
+          <img src={logoImage} alt="FoodLens Logo" className="brand-logo" />
+          <span className="brand-name">FoodLens</span>
+        </a>
+
+        <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
+          <a
+            href="#scanner"
+            className="nav-link highlight"
+            onClick={() => handleNavClick(onStartScan)}
+          >
+            📸 Scan Food
+          </a>
+          <a
+            href="#features"
+            className="nav-link"
+            onClick={() => handleNavClick()}
+          >
+            Features
+          </a>
+          <a
+            href="#about"
+            className="nav-link"
+            onClick={() => handleNavClick()}
+          >
+            About
+          </a>
         </div>
-        <div className="links">
-          <a href="#features">Features</a>
-          <a>About</a>
-          <a>Sponsor</a>
-        </div>
-        <div
-          className="nav-toggle"
+
+        <button
+          className={`nav-toggle ${menuOpen ? "active" : ""}`}
           aria-label="Toggle Navigation Menu"
-          onClick={() => {}}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           <span></span>
           <span></span>
           <span></span>
-        </div>
-      </nav>
-    </>
+        </button>
+      </div>
+    </nav>
   );
 }
 

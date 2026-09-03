@@ -1,11 +1,12 @@
 import "./Button.css";
 
-function Button({ action, color, bgColor, link }) {
+function Button({ action, color, bgColor, link, onClick }) {
   // If link prop is provided, render an <a> tag, otherwise render a <button>
   if (link) {
     return (
       <a
         href={link}
+        onClick={onClick}
         style={{
           color: color,
           backgroundColor: bgColor,
@@ -19,6 +20,7 @@ function Button({ action, color, bgColor, link }) {
 
   return (
     <button
+      onClick={onClick}
       style={{
         color: color,
         backgroundColor: bgColor,
