@@ -89,6 +89,38 @@ VITE_SPOONACULAR_API_KEY=your_spoonacular_api_key
 
 ⚠️ Never expose your API keys in frontend code for production. Use a backend proxy or environment protection for deployment.
 
+## 🚀 Deployment & Redeployment (GitHub Pages)
+
+This project uses the [`gh-pages`](https://www.npmjs.com/package/gh-pages) package to automatically build and deploy the React application to GitHub Pages.
+
+### 🔄 How to Redeploy Updates
+
+Whenever you make changes to the code and want to push the latest build live:
+
+1. **Commit and push your source code** to your repository:
+   ```bash
+   git add .
+   git commit -m "feat/fix: describe your changes"
+   git push origin main
+   ```
+
+2. **Run the deploy script**:
+   ```bash
+   npm run deploy
+   ```
+   *This will automatically trigger `npm run build` (creating the production bundle in `dist/`) and publish the contents to the `gh-pages` branch.*
+
+3. **Verify GitHub Pages settings** (first-time / if needed):
+   - Go to your GitHub repository -> **Settings** -> **Pages**.
+   - Under **Build and deployment** > **Source**, ensure **Deploy from a branch** is selected.
+   - Set the branch to `gh-pages` and folder to `/(root)`.
+   - Save and wait 1–2 minutes.
+
+4. **Access your live site**:
+   ```
+   https://goodnewscodes.github.io/FoodLens/
+   ```
+
 ## 🧠 How It Works
 
 - User uploads a food image.
