@@ -33,7 +33,6 @@ function Navbar({ onStartScan, onOpenJournal, mealCount = 0, onNavigateHome }) {
           <img src={logoImage} alt="FoodLens Logo" className="brand-logo" />
           <div className="brand-text-group">
             <span className="brand-name">FoodLens</span>
-            <span className="brand-tag">AI Vision</span>
           </div>
         </a>
 
@@ -46,7 +45,7 @@ function Navbar({ onStartScan, onOpenJournal, mealCount = 0, onNavigateHome }) {
               handleNavClick(onStartScan);
             }}
           >
-            📸 Scan Food
+            Scan Food
           </a>
 
           <button
@@ -54,7 +53,7 @@ function Navbar({ onStartScan, onOpenJournal, mealCount = 0, onNavigateHome }) {
             className="nav-link journal-btn"
             onClick={() => handleNavClick(onOpenJournal)}
           >
-            🍽️ Meal Log
+            Meal Log
             {mealCount > 0 && <span className="nav-counter">{mealCount}</span>}
           </button>
 
@@ -96,7 +95,7 @@ function Navbar({ onStartScan, onOpenJournal, mealCount = 0, onNavigateHome }) {
             onClick={onOpenJournal}
             title="Open Daily Meal Journal"
           >
-            🍽️ <span className="journal-btn-text">Log</span>
+            <span className="journal-btn-text">Log</span>
             {mealCount > 0 && <span className="nav-counter">{mealCount}</span>}
           </button>
 

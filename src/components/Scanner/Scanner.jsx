@@ -217,7 +217,6 @@ function Scanner({ onAnalyze, isAnalyzing }) {
     <section id="scanner" className="scanner-section">
       <div className="scanner-container">
         <div className="scanner-header">
-          <div className="scanner-pill-badge">⚡ Instant AI Recognition</div>
           <h2 className="scanner-title">Scan, Snap or Upload Your Meal</h2>
           <p className="scanner-subtitle">
             Take a photo, drop an image, or paste from clipboard to decode calories, macronutrients, allergens, and authentic recipes.
@@ -282,7 +281,7 @@ function Scanner({ onAnalyze, isAnalyzing }) {
                 className="scanner-btn capture-btn"
                 onClick={capturePhoto}
               >
-                📸 Snap & Analyze
+                Snap & Analyze
               </button>
               <button
                 type="button"

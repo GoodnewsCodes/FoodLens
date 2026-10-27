@@ -147,7 +147,7 @@ Whenever you make changes to the code and want to push the latest build live:
 
 ## 📅 Future Enhancements
 
-- 🍽️ Support multiple foods in one image.
+- Support multiple foods in one image.
 
 - 📱 Build cross-platform version in React Native.
 

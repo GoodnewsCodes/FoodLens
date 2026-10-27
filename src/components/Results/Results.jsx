@@ -208,7 +208,7 @@ function Results({ data, onReset, onLogMeal, onSelectAlternate }) {
           <div className="food-image-wrapper" onClick={() => setShowImageModal(true)} title="Click to view full image">
             <img src={displayImage} alt={name} className="food-display-img" />
             <span className="zoom-hint">🔍 Expand</span>
-            {userImage && <span className="photo-badge">📸 Scanned Photo</span>}
+            {userImage && <span className="photo-badge">Scanned Photo</span>}
           </div>
 
           <div className="food-info-wrapper">
@@ -646,7 +646,7 @@ function Results({ data, onReset, onLogMeal, onSelectAlternate }) {
         {/* Bottom CTA & Floating Journal Option */}
         <div className="results-bottom-cta">
           <button className="reset-scan-btn secondary" onClick={onReset}>
-            📸 Scan Another Meal
+            Scan Another Meal
           </button>
           <button className="reset-scan-btn primary" onClick={handleLogClick}>
             ➕ Log to Today's Journal

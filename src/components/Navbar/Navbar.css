@@ -55,17 +55,6 @@
   letter-spacing: -0.6px;
 }
 
-.brand-tag {
-  font-size: 0.65rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--primary);
-  background-color: var(--primary-light);
-  border: 1px solid var(--primary-border);
-  padding: 1px 6px;
-  border-radius: var(--radius-full);
-}
-
 .nav-actions {
   display: flex;
   align-items: center;
@@ -228,12 +217,14 @@
   }
 
   .nav-journal-quick-btn {
-    display: none; /* In desktop, it is inside the nav-menu */
+    display: none;
+    /* In desktop, it is inside the nav-menu */
   }
 }
 
 @media (max-width: 767px) {
   .journal-btn {
-    display: none; /* In mobile, quick button is in navbar */
+    display: none;
+    /* In mobile, quick button is in navbar */
   }
 }

@@ -29,8 +29,8 @@ function Footer({ onOpenJournal, onStartScan }) {
           <div className="footer-column">
             <h4>Application</h4>
             <a href="#" onClick={(e) => { e.preventDefault(); scrollToTop(); }}>Home</a>
-            <a href="#scanner" onClick={(e) => { e.preventDefault(); if (onStartScan) onStartScan(); }}>📸 Scan Meal</a>
-            <button type="button" className="footer-link-btn" onClick={onOpenJournal}>🍽️ Meal Journal</button>
+            <a href="#scanner" onClick={(e) => { e.preventDefault(); if (onStartScan) onStartScan(); }}>Scan Meal</a>
+            <button type="button" className="footer-link-btn" onClick={onOpenJournal}>Meal Journal</button>
             <a href="#features">🌟 Features</a>
           </div>
 

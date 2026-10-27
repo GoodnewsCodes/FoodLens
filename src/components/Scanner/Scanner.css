@@ -24,22 +24,6 @@
   margin-bottom: 28px;
 }
 
-.scanner-pill-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background-color: var(--primary-light);
-  color: var(--primary);
-  border: 1px solid var(--primary-border);
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  padding: 5px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 12px;
-}
-
 .scanner-title {
   font-size: clamp(1.6rem, 4vw, 2.35rem);
   font-weight: 800;
@@ -444,6 +428,7 @@
   0% {
     top: 5%;
   }
+
   100% {
     top: 92%;
   }
@@ -505,9 +490,11 @@
     width: 20%;
     transform: translateX(-20%);
   }
+
   50% {
     width: 65%;
   }
+
   100% {
     width: 100%;
     transform: translateX(100%);

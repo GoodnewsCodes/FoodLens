@@ -145,25 +145,21 @@ function App() {
             style={{ backgroundImage: `url(${heroImage})` }}
           >
             <div className="hero-container">
-              <div className="hero-badge">
-                <span className="hero-badge-dot"></span>
-                <span>AI-Powered Food Vision & Nutrition Engine</span>
-              </div>
               <h1 className="hero-text">
-                Know More About Your Food In One <span className="hero-highlight">Snap</span> 📸
+                Know More About Your Food In One Snap 📸
               </h1>
               <p className="hero-subtext">
                 Instant dish recognition, full macronutrient & calorie breakdowns, allergen detection, and authentic step-by-step recipes.
               </p>
 
               <div className="hero-btn-group">
-                <Button action="📸 Scan Meal Now" onClick={handleStartScan} />
+                <Button action="Scan Meal Now" onClick={handleStartScan} />
                 <button
                   type="button"
                   className="hero-secondary-btn"
                   onClick={() => setIsJournalOpen(true)}
                 >
-                  🍽️ View Today's Log ({mealLog.length})
+                  View Today's Log ({mealLog.length})
                 </button>
               </div>
 
@@ -196,7 +192,6 @@ function App() {
           <section id="features" className="feature">
             <div className="feature-container">
               <div className="feature-header">
-                <span className="feature-pill">Cutting-Edge Features</span>
                 <h2 className="feature-text">Everything You Need To Master Nutrition</h2>
                 <p className="feature-sub">Designed for mindful eaters, fitness athletes, home chefs, and culinary explorers.</p>
               </div>
@@ -258,7 +253,6 @@ function App() {
       {/* About & Contact Section */}
       <section id="about" className="about">
         <div className="about-container">
-          <span className="feature-pill">About FoodLens</span>
           <h2 className="about-title">Intelligent Culinary Transparency</h2>
           <p className="about-description">
             FoodLens is an AI culinary companion designed to empower individuals with instant transparency into the foods they eat. Scan any dish to decode macronutrients, uncover allergens, track daily goals, and get authentic cooking recipes right at your fingertips.
@@ -277,7 +271,7 @@ function App() {
               className="about-link secondary"
               onClick={handleStartScan}
             >
-              📸 Try a Free Scan
+              Try a Free Scan
             </button>
             <a href="mailto:contact@foodlens.app" className="about-link tertiary">
               ✉️ Contact Team
